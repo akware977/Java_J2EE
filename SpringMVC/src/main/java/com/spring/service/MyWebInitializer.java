@@ -11,12 +11,13 @@ public class MyWebInitializer extends AbstractAnnotationConfigDispatcherServletI
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
-		return null;
+		return new Class[] {MvcConfig.class};
 	}
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
-		return new Class[] {SpringConfig.class};
+		//return new Class[] {SpringConfig.class};
+		return null;
 	}
 
 	@Override
